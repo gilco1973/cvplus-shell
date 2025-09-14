@@ -13,6 +13,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@cvplus/logging": "file:../logging",
     "@cvplus/core": "file:../core",
     "@cvplus/auth": "file:../auth",
     "@cvplus/cv-processing": "file:../cv-processing",
