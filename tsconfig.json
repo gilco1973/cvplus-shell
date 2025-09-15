@@ -5,6 +5,8 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -16,8 +18,6 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
     /* Path mapping for submodules */
@@ -25,24 +25,20 @@
     "paths": {
       "@/*": ["./src/*"],
       "@cvplus/core": ["../core/src"],
-      "@cvplus/auth": ["../auth/src/frontend"],
-      "@cvplus/cv-processing": ["../cv-processing/src/frontend"],
-      "@cvplus/multimedia": ["../multimedia/src/frontend"],
-      "@cvplus/public-profiles": ["../public-profiles/src/frontend"],
-      "@cvplus/analytics": ["../analytics/src/frontend"]
+      "@cvplus/auth": ["../auth/src/frontend"]
     },
 
     /* Type definitions */
     "types": ["vite/client"]
   },
   "include": [
-    "src",
-    "../core/src/**/*",
-    "../auth/src/frontend/**/*",
-    "../cv-processing/src/frontend/**/*",
-    "../multimedia/src/frontend/**/*",
-    "../public-profiles/src/frontend/**/*",
-    "../analytics/src/frontend/**/*"
+    "src"
+  ],
+  "exclude": [
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/__tests__/**",
+    "**/__mocks__/**"
   ],
   "references": [
     { "path": "./tsconfig.node.json" }

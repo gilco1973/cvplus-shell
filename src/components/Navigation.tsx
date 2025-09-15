@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
                   {user.displayName || user.email}
                 </p>
                 <p className="text-xs text-gray-500">
-                  {premiumFeatures?.tier || 'Free'} Plan
+                  User Account
                 </p>
               </div>
             </div>

@@ -1,12 +1,28 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { AnalyticsDashboard } from '@cvplus/analytics';
 
 /**
  * AnalyticsPage - Orchestrates analytics and insights
  *
- * Integrates with @cvplus/analytics AnalyticsDashboard component
+ * TODO: Will integrate with @cvplus/analytics via orchestration pattern
+ * Note: Direct Layer 2 imports removed for architectural compliance
  */
+
+// Temporary placeholder component - will be replaced with orchestration pattern
+const AnalyticsDashboard: React.FC<{
+  dateRange: string;
+  showExportOptions: boolean;
+  onMetricsUpdate: (metrics: any) => void;
+  className: string;
+}> = () => (
+  <div className="bg-white rounded-lg shadow p-6">
+    <h2 className="text-xl font-semibold mb-4">Analytics Dashboard</h2>
+    <p className="text-gray-600">
+      Analytics dashboard will be loaded via orchestration pattern.
+      Direct Layer 2 import removed for architectural compliance.
+    </p>
+  </div>
+);
 const AnalyticsPage: React.FC = () => {
   return (
     <div className="h-full overflow-auto">
