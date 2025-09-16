@@ -3,7 +3,7 @@
  *
  * Centralized Firebase configuration shared across all submodules.
  * Supports both production and emulator environments.
-  */
+ */
 
 import { initializeApp } from 'firebase/app';
 import { getAuth, connectAuthEmulator } from 'firebase/auth';

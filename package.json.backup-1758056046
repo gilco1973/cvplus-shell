@@ -11,8 +11,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
-    "clean": "rimraf dist",
-    "test": "jest"
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@cvplus/logging": "file:../logging",
