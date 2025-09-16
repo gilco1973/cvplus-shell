@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 /**
  * CVProcessingPage - Orchestrates CV processing workflow
  *
- * TODO: Will integrate with @cvplus/cv-processing via orchestration pattern
+ * TODO: Will integrate with @cvplus/processing via orchestration pattern
  * Note: Direct Layer 2 imports removed for architectural compliance
  *
  * Routes:

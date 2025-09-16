@@ -10,7 +10,7 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
       '@cvplus/core': resolve(__dirname, '../core/src'),
       '@cvplus/auth': resolve(__dirname, '../auth/src/frontend'),
-      '@cvplus/cv-processing': resolve(__dirname, '../cv-processing/src/frontend'),
+      '@cvplus/processing': resolve(__dirname, '../processing/src/frontend'),
       '@cvplus/multimedia': resolve(__dirname, '../multimedia/src/frontend'),
       '@cvplus/public-profiles': resolve(__dirname, '../public-profiles/src/frontend'),
       '@cvplus/analytics': resolve(__dirname, '../analytics/src/frontend'),
