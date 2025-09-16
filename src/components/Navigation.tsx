@@ -10,7 +10,7 @@ import { useAuth } from '@cvplus/auth';
  */
 const Navigation: React.FC = () => {
   const location = useLocation();
-  const { user, isAuthenticated, premiumFeatures, hasPremiumFeature } = useAuth();
+  const { user, isAuthenticated } = useAuth();
 
   const navigationItems = [
     { name: 'Dashboard', href: '/', icon: '🏠' },
@@ -60,11 +60,7 @@ const Navigation: React.FC = () => {
                 >
                   <span className="mr-3">{item.icon}</span>
                   {item.name}
-                  {item.name === 'Multimedia' && hasPremiumFeature && hasPremiumFeature('multimedia-generation') && (
-                    <span className="ml-auto px-1 py-0.5 text-xs bg-yellow-100 text-yellow-800 rounded">
-                      Pro
-                    </span>
-                  )}
+                  {/* Premium feature indicator removed - handled by higher layer modules */}
                 </Link>
               </li>
             );
